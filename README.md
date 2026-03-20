@@ -36,8 +36,8 @@ I needed a dead-simple way to move files on and off a VPS in a restricted networ
 ## Quick start
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/file-share-hub.git
-cd file-share-hub
+git clone https://github.com/alihan1072k-jpg/Irupload.git
+cd Irupload
 bash install.sh
 ```
 
@@ -154,6 +154,4 @@ file-share-hub/
 
 ---
 
-## License
 
-MIT
