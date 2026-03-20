@@ -289,6 +289,22 @@ upfile
 
 سرور روی HTTP ساده کار می‌کند. SSL باید توسط reverse proxy مدیریت شود (Nginx، Caddy، Parspack).
 
+```nginx
+server {
+    listen 443 ssl;
+    server_name your-domain.com;
+    ssl_certificate     /path/to/cert.pem;
+    ssl_certificate_key /path/to/key.pem;
+    location / {
+        proxy_pass http://127.0.0.1:5000;
+        proxy_set_header X-Forwarded-For $remote_addr;
+    }
+}
+```
+
+
+
+
 ---
 
 ## ساختار پروژه
