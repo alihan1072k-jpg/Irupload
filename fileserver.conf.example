@@ -1,0 +1,16 @@
+# File Share Hub — Configuration
+# Copy this file to fileserver.conf and edit the values below.
+# fileserver.conf is gitignored and will never be committed.
+
+# Port to listen on (default: 5000)
+PORT=5000
+
+# Password required to access the panel
+# CHANGE THIS before running in production!
+PASSWORD=change_me_before_running
+
+# Display name shown in the browser UI
+SITE_NAME=My File Server
+
+# Maximum upload size in megabytes (default: 200, max: 5000)
+MAX_UPLOAD_SIZE_MB=200
